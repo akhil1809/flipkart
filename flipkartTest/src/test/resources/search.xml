@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Search Product Test">
+  	<parameter name="platFormName"   value="ANDROID"></parameter>
+  	<parameter name="userName"          value="akhilesh1809@gmail.com"></parameter>
+  	<parameter name="password"          value="Test@123"></parameter>
+	  <parameter name="platformversion" value="9"></parameter>
+	 <parameter name="deviceName" value="MI A3"></parameter>
+  	<groups>
+  	  <run>
+  		<include name="flipkartSearch"></include>
+  	  </run>
+  	</groups>
+  	<packages>
+  	  <package name="com.flipkart.*"/>
+  	</packages>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
