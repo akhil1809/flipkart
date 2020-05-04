@@ -38,4 +38,5 @@ Please use following command:  Open the command terminal and type below command:
 Install the Allure in your system: if you are using mac then run following command: 'brew install allure' 
 To generate the allure report run the following command: 'allure serve allure-results'
 
-Note: Two test cases I perposefully failed to test failed scenario.
+Note: 
+a.Two test cases I perposefully failed to test failed scenario.
