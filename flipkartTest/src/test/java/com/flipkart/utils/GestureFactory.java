@@ -48,26 +48,23 @@ public class GestureFactory {
     //******* Scroll Function **********//
     public void scroll(int scrollSteps)
     {
-        // appWidth=100;
-
+        // appWidth=100
             int appWidth = getScreenWidth() / 2;
             int appHeight = getScreenHeight() / 2;
             touchAction.press(PointOption.point(appWidth, appHeight)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(appWidth, appHeight + scrollSteps)).release().perform();
 
-        }
+     }
 
-        /****** Horizontal Swipe *********/
-        public void horizontalSwipe(WebElement element)
-        {
-            int startX,startY,endX,endY,offsetValue;
-            offsetValue=250;
-            startX = element.getSize().width - offsetValue;
-            startY =DriverManager.getGesture().getElementLocation(element).y + element.getSize().height / 2;
-            endX = DriverManager.getGesture().getElementLocation(element).x + offsetValue;
-            endY = DriverManager.getGesture().getElementLocation(element).y+ element.getSize().height / 2;
-            DriverManager.getGesture().swipeByCordinates(startX,startY,endX,endY);
-        }
-
-
+    /****** Horizontal Swipe *********/
+    public void horizontalSwipe(WebElement element)
+    {
+        int startX,startY,endX,endY,offsetValue;
+        offsetValue=250;
+        startX = element.getSize().width - offsetValue;
+        startY =DriverManager.getGesture().getElementLocation(element).y + element.getSize().height / 2;
+        endX = DriverManager.getGesture().getElementLocation(element).x + offsetValue;
+        endY = DriverManager.getGesture().getElementLocation(element).y+ element.getSize().height / 2;
+        DriverManager.getGesture().swipeByCordinates(startX,startY,endX,endY);
+    }
 }
 
