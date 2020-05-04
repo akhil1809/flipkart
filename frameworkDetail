@@ -1,0 +1,41 @@
+Framework Detail:
+
+Designed basics framework for Flipkart Search Product.
+Tools Used: Appium, Selenium using Testng library.
+Created 3 packages: Pages, Tests, Utils
+Created testng xml
+Page Object Model
+
+Package detail:
+
+Utils: 
+a. Factory Class: This will initialise the Test Run in Mobile and test which is derived  from search.xml file. 
+b. Mobile Factory Class: This file contains all Mobile Capablities detials detail that user want to execute. 
+c. DriverManager: This is instantiating the web driver object which can use anywhere in project(smiliar we can create each Class object and can use anywhere in project.)
+d. Gesture Factory: This file contains common function related Scroll and swipe in mobile.
+e. CommonFactory: This file contains all common function which can be used across the project like click- event,screenshot etc. 
+f. Config: This file contains all constant value related to environment and platform. 
+g. ListnerTest: This file contains all listener interface method can be user during execution.
+h. FileUilts: This file is use for read property file.
+i. JSON Parser: To  read the JSON  credential file.
+
+Page: 
+a.Sigin Page: This page contains all object locators and functions for login page. 
+b.Search Page This page contains all object locators and functions for search page.
+
+Test : 
+a. SignInTest: This class contains test related Sigg In Page. 
+b. Search Test: This class contains test related to search Page page like cartCount, Product name, price and size. Add to cart page.
+
+
+
+Report: Integrated Allure report
+
+To run this test cases :
+
+Please use following command:  Open the command terminal and type below command: 'mvn clean test -Dsuite=search'
+
+Install the Allure in your system: if you are using mac then run following command: 'brew install allure' 
+To generate the allure report run the following command: 'allure serve allure-results'
+
+Note: Two test cases I perposefully failed to test failed scenario.
