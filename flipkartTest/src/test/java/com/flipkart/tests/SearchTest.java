@@ -23,7 +23,7 @@ public class SearchTest {
 	{
 		try
 		{
-			DriverManager.getSignInPage().loginWithEmail();
+			//DriverManager.getSignInPage().loginWithEmail();
 			DriverManager.getGesture().horizontalSwipe(DriverManager.getSearchPage().carousel);
 			DriverManager.getSearchPage().searchProductGroup(FileUtils.readFromPropertyFile("productGroup"),FileUtils.readFromPropertyFile("productSearchTitle"));
 			DriverManager.getSearchPage().allowPopUp();
